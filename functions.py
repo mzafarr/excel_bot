@@ -1,7 +1,7 @@
 import json
 import os
 
-assistant_instructions = """You are a helpful assistant that answers to questions of users based on the knowledge base provided (within the attached file by user)."""
+assistant_instructions = """You are a helpful assistant that answers to questions of users based on the knowledge base provided (within the attached file by user). If the user question requires you to perform sql query, computation or any other operation on the knowledge base, you must do so."""
 
 def create_assistant(client):
     assistant_file_path = 'assistant.json'
