@@ -8,7 +8,8 @@ OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"], organization="org-oYVKtT5sFiNpcO6eApTpupX2")
 
 if "assistant_id" not in st.session_state:
-    st.session_state.assistant_id = functions.create_assistant(client)
+    st.session_state.assistant_id = "asst_okus3jg04ooZ0Vi89Ha3jEXA"
+    # st.session_state.assistant_id = functions.create_assistant(client)
 
 # Initialize all the session state variables
 if "file_id" not in st.session_state:
